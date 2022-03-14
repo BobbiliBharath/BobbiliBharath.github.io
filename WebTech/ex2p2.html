@@ -12,6 +12,7 @@
             border: 2px solid black;
             padding: 10px;
         }
+
         fieldset {
             border: 1px solid #000;
             max-width: fit-content;
@@ -49,10 +50,10 @@
     </style>
     <script>
         function myFunction() {
-          alert("The form was submitted");
+            alert("The form was submitted");
         }
     </script>
-        
+
 </head>
 
 <body>
@@ -60,13 +61,14 @@
 
     <form action="#!" onsubmit="myFunction()">
 
-    <section id="personal-details">
-        <fieldset>
-            <legend>Personal Details</legend>
+        <section id="personal-details">
+            <fieldset>
+                <legend>Personal Details</legend>
 
                 <p>
                     <label for="fname">*First Name: </label>
-                    <input type="text" name="fname" placeholder="Enter your first name" required autofocus>
+                    <input type="text" name="fname" placeholder="Enter your first name" pattern="[a-z]{7}" required
+                        autofocus>
                 </p>
                 <p>
                     <label for="mname">*Middle Name: </label>
@@ -91,17 +93,17 @@
                     <label for="female-gender">Female</label>
                 </p>
 
-        </fieldset>
-        <div class="slider-bois">
-            <input type="range" min=0 max=100 value=20 name="personal-range">
-            <label for="personal-range">20% out of 100%</label>
-        </div>
-    </section>
+            </fieldset>
+            <div class="slider-bois">
+                <input type="range" min=0 max=100 value=20 name="personal-range">
+                <label for="personal-range">20% out of 100%</label>
+            </div>
+        </section>
 
-    <section id="address-details">
-        <fieldset>
-            <legend>Address Details</legend>
-           
+        <section id="address-details">
+            <fieldset>
+                <legend>Address Details</legend>
+
                 <p>
                     <label for="address">Address: </label>
                     <textarea name="address" id="address" cols="30" rows="10"></textarea>
@@ -116,23 +118,24 @@
                 </p>
                 <p>
                     <label for="zip">Zip Code:</label>
-                    <input type="text" name="zip" placeholder="xxxxxx"pattern="[0-9]{5}[0-9]{5}" required>
+                    <input type="text" name="zip" placeholder="xxxxxx" pattern="[0-9]{5}[0-9]{5}" required>
                 </p>
 
-        </fieldset>
-        <div class="slider-bois">
-            <input type="range" min=0 max=100 value=40 name="address-range">
-            <label for="">40% out of 100%</label>
-        </div>
-    </section>
+            </fieldset>
+            <div class="slider-bois">
+                <input type="range" min=0 max=100 value=40 name="address-range">
+                <label for="">40% out of 100%</label>
+            </div>
+        </section>
 
-    <section id="">
-        <fieldset>
-            <legend>Contact Information</legend>
-     
+        <section id="">
+            <fieldset>
+                <legend>Contact Information</legend>
+
                 <p>
                     <label for="telephone">*Telephone</label>
-                    <input type="tel" placeholder="xxxx-xxxxxx" name="telephone" pattern="[0-9]{4}-[0-9]{3}[0-9]{3}" required>
+                    <input type="tel" placeholder="xxxx-xxxxxx" name="telephone" pattern="[0-9]{4}-[0-9]{3}[0-9]{3}"
+                        required>
                 </p>
                 <p>
                     <label for="mobile">*Mobile</label>
@@ -140,25 +143,24 @@
                 </p>
                 <p>
                     <label for="email">*Enter your Email</label>
-                    <input type="email" placeholder="valid email" name="email"  pattern=".+@gmail\.com" required>
+                    <input type="email" placeholder="valid email" name="email" pattern=".+@gmail\.com" required>
                 </p>
                 <p>
                     <label for="website">*Website</label>
-                    <input type="url" name="website" placeholder="https://example.com"
-                    pattern="https://.*" required>
+                    <input type="url" name="website" placeholder="https://example.com" pattern="https://.*" required>
                 </p>
 
-        </fieldset>
-        <div class="slider-bois">
-            <input type="range" min=0 max=100 value=60 name="contact-range">
-            <label for="">60% out of 100%</label>
-        </div>
-    </section>
+            </fieldset>
+            <div class="slider-bois">
+                <input type="range" min=0 max=100 value=60 name="contact-range">
+                <label for="">60% out of 100%</label>
+            </div>
+        </section>
 
-    <section id="educational-details">
-        <fieldset>
-            <legend>Educational Details</legend>
-   
+        <section id="educational-details">
+            <fieldset>
+                <legend>Educational Details</legend>
+
                 <table>
                     <thead>
                         <td>Qualification</td>
@@ -170,7 +172,8 @@
                     </thead>
                     <tr>
                         <td><input type="checkbox" name="10th" checked>
-                            <label for="10th">10th</label></td>
+                            <label for="10th">10th</label>
+                        </td>
                         <td><input type="text" placeholder="Board/University"></td>
                         <td>
                             <select name="countries" id="countries" title="List of countries">
@@ -187,7 +190,8 @@
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="10th" checked>
-                            <label for="12th">10th</label></td>
+                            <label for="12th">10th</label>
+                        </td>
                         <td><input type="text" placeholder="Board/University"></td>
                         <td>
                             <select name="countries" id="countries" title="List of countries">
@@ -204,7 +208,8 @@
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="10th">
-                            <label for="B.tech">10th</label></td>
+                            <label for="B.tech">10th</label>
+                        </td>
                         <td><input type="text" placeholder="Board/University"></td>
                         <td>
                             <select name="countries" id="countries" title="List of countries">
@@ -221,7 +226,8 @@
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="10th">
-                            <label for="M.Tech">10th</label></td>
+                            <label for="M.Tech">10th</label>
+                        </td>
                         <td><input type="text" placeholder="Board/University"></td>
                         <td>
                             <select name="countries" id="countries" title="List of countries">
@@ -237,15 +243,15 @@
                         <td><input type="number" title="Percentage"></td>
                     </tr>
                 </table>
-   
-        </fieldset>
-        <div class="slider-bois">
-            <input type="range" min=0 max=100 value=80 name="educational-raange">
-            <label for="">80% out of 100%</label>
-        </div>
-    </section>
 
-    <section id="last-section">
+            </fieldset>
+            <div class="slider-bois">
+                <input type="range" min=0 max=100 value=80 name="educational-raange">
+                <label for="">80% out of 100%</label>
+            </div>
+        </section>
+
+        <section id="last-section">
 
             <p>
                 <label for="file">Attach your resume in .doc or .pdf format</label>
@@ -258,14 +264,14 @@
             </p>
 
 
-        <div class="slider-bois">
-            <input type="range" min=0 max=100 value=100 name="">
-            <label for="">100% out of 100%</label>
-        </div>
-    </section>
+            <div class="slider-bois">
+                <input type="range" min=0 max=100 value=100 name="">
+                <label for="">100% out of 100%</label>
+            </div>
+        </section>
 
-    <div class="wrapper"><input type="submit" value="Submit" id="submit-all" ></div>
-</form>
+        <div class="wrapper"><input type="submit" value="Submit" id="submit-all"></div>
+    </form>
 </body>
 
 </html>

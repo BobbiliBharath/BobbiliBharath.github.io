@@ -67,8 +67,8 @@
 
                 <p>
                     <label for="fname">*First Name: </label>
-                    <input type="text" name="fname" placeholder="Enter your first name" pattern="[a-z]{7}"
-                        value="'.$_SESSION['user_first_name'].'" required autofocus>
+                    <input type="text" name="fname" maxlength="32" placeholder="Enter your first name"
+                        pattern="[A-Za-z]" value="bob" required autofocus>
                 </p>
                 <p>
                     <label for="mname">*Middle Name: </label>
